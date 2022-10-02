@@ -1,0 +1,63 @@
+body {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #00565C;
+    color: #5199A3;
+    
+
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 4.5rem;
+
+} 
+h2, h3, h4, h5 , h6 {
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
+}
+
+header {
+    text-align: center;
+    background-color: #F2EFE7;
+    padding: 0.5rem;
+    border: 2px solid #000004;
+    margin-left: 20%;
+    margin-right: 20%; 
+    
+    
+}
+
+#caca {
+    font-family: "Bebas Neue";
+    padding-left: 45%;
+    color:#F2EFE7
+    
+
+}
+
+#bio {
+   padding-left: 43%;
+   color: #F2EFE7; 
+
+}
+
+
+#footer {
+    font-size: 1rem;
+    text-align: center;
+    background-color: #F2EFE7;
+    padding: 1.5rem;
+    border: 2px solid #000004;
+   
+}
+
+
+
+
+
+ 
+
+
+   
