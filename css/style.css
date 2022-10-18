@@ -1,3 +1,4 @@
+/* Body */
 body {
     font-family: Montserrat;
     font-size: 1.5rem;
@@ -8,43 +9,105 @@ body {
 
 }
 
+#idk { 
+    border: 2rem solid white;
+}
+
+/* h1s */
 h1 {
     font-family: "Bebas Neue";
     font-size: 4.5rem;
 
 } 
+
+/* h2,h3, h4, h5, h6 */
 h2, h3, h4, h5 , h6 {
     font-family: "Bebas Neue";
     font-size: 2.5rem;
 }
 
+/* header-hero */
 header {
     text-align: center;
     background-color: #F2EFE7;
     padding: 0.5rem;
     border: 2px solid #000004;
+    margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%; 
     
     
 }
 
-#caca {
-    font-family: "Bebas Neue";
+/* bio */
+#bio {
     padding-left: 45%;
+    color: #F2EFE7; 
+ 
+ }
+
+
+ /* bio header */
+#bio-h {
+    font-family: "Bebas Neue";
     color:#F2EFE7
     
 
 }
 
-#bio {
-   padding-left: 43%;
-   color: #F2EFE7; 
+/* hobbies */
+#hobbies {
+    padding-left: 45%;
+    color:#F2EFE7
 
 }
 
+/* gallery */
+#gallery {
+    margin: 4rem 10rem;
+    background-color: #000004;
+    text-align: center;
+    color:#00565C;
+}
 
+#gallery h2 {
+    color: #00565C;
+    padding-top: 2rem;
+}
+
+#gallery img {
+    border: 2px solid #F2EFE7
+}
+
+#gallery figure {
+    padding-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* literature */
+#lit {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    padding-top: 10rem;
+    text-align: center;
+    color:#F2EFE7
+    
+    
+    
+    
+}
+
+#lit div {
+    text-align: left;
+    padding: 2rem;
+    max-width: 65%;
+    margin: 0 auto
+
+}
+
+/* footer */
 #footer {
+    margin-top: 10rem;
     font-size: 1rem;
     text-align: center;
     background-color: #F2EFE7;
