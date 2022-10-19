@@ -6,12 +6,11 @@ body {
     background-color: #00565C;
     color: #5199A3;
     
+    
 
 }
 
-#idk { 
-    border: 2rem solid white;
-}
+
 
 /* h1s */
 h1 {
@@ -23,91 +22,184 @@ h1 {
 /* h2,h3, h4, h5, h6 */
 h2, h3, h4, h5 , h6 {
     font-family: "Bebas Neue";
-    font-size: 2.5rem;
+    
 }
 
-/* header-hero */
+.main-title { 
+    font-size: 2rem;
+}
+
+/* header */
 header {
+    display: flex;
+    height: 3rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    background-color: #F2EFE7;
+    border: 2px solid #000004;
+}
+
+.box-1 { 
+    flex: 1;
+    max-width: auto auto;
+    
+}
+
+.box-2 {
+    flex:3;
+   
+
+}
+
+/*
+header img { 
+    height: 90%;
+    align-self: center;
+    
+}
+
+header h2 {
+    align-self: center;
+}
+*/
+
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: #F2EFE7;
     padding: 0.5rem;
     border: 2px solid #000004;
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%; 
+    font-weight: 595;
+  
+
     
-    
+
+}
+
+.hero img {
+    align-self: center;
+    width: 40%;
+   
+}
+
+.hero div { 
+    font-size: 1rem;
 }
 
 /* bio */
-#bio {
-    padding-left: 45%;
+.bio {
+    
+   
     color: #F2EFE7; 
  
  }
 
 
  /* bio header */
-#bio-h {
+.bio-h {
     font-family: "Bebas Neue";
-    color:#F2EFE7
+    font-size: 2.8rem;
+    color:#F2EFE7;
+    text-align: center;
     
 
-}
+} 
+
 
 /* hobbies */
-#hobbies {
-    padding-left: 45%;
-    color:#F2EFE7
-
+.hobbies {
+    color:#F2EFE7;
+    
 }
 
 /* gallery */
-#gallery {
-    margin: 4rem 10rem;
+.gallery {
+
+    font-size: large;
     background-color: #000004;
     text-align: center;
-    color:#00565C;
+    color:#F2EFE7;
 }
 
-#gallery h2 {
-    color: #00565C;
-    padding-top: 2rem;
+.gallery h2 {
+    text-align:center;
+    justify-content:center;
+    margin-bottom: none;
+    
+    
 }
 
-#gallery img {
-    border: 2px solid #F2EFE7
+.gallery img {
+    width: 85%;
+    border: 2px solid #F2EFE7;
 }
 
-#gallery figure {
-    padding-bottom: 3rem;
+.gallery figure {
+    margin: 0 0 ;
     font-weight: 600;
+    
 }
 
 /* literature */
-#lit {
-    border-top: 10px solid black;
-    border-bottom: 10px solid black;
-    padding-top: 10rem;
-    text-align: center;
+.lit {
+    border: 5px solid black;
+    border-left: none;
+    border-right: none;
+    margin-top: 15%;
     color:#F2EFE7
     
-    
-    
+}
+
+.lit h2 {
+    text-align: center;
+    padding: 10% 0;
+    margin: 0 0;
     
 }
 
-#lit div {
-    text-align: left;
+
+.lit div {
+  
+    font-size: large;
     padding: 2rem;
-    max-width: 65%;
-    margin: 0 auto
+    padding-top: 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#p1 { 
+    margin-top: 0%;
+    
+}
+
+
+
+
+/* Drop case */
+
+.lit div p:first-letter {
+    color: rgb(0, 0, 0);
+    float:left; 
+    font-family:"monoton"; 
+    line-height: 3.3rem;  
+    font-weight: 600;
+    border: .2rem double black;
+    background-color:beige;
+    font-size: 3rem;
+    margin-right: .6rem;
+
 
 }
+
+
 
 /* footer */
-#footer {
-    margin-top: 10rem;
+.footer {
+    margin-top: 10%;
     font-size: 1rem;
     text-align: center;
     background-color: #F2EFE7;
