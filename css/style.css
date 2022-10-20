@@ -39,30 +39,19 @@ header {
     border: 2px solid #000004;
 }
 
-.box-1 { 
-    flex: 1;
-    max-width: auto auto;
+header .box-1 { 
+    flex: 1%;
     
 }
 
-.box-2 {
-    flex:3;
-   
+header .box-2 {
+    flex:80%;
+    margin: 0 0;
+    font-size: 250%;
+    text-align: justify;
 
-}
-
-/*
-header img { 
-    height: 90%;
-    align-self: center;
     
 }
-
-header h2 {
-    align-self: center;
-}
-*/
-
 
 /* hero */
 
@@ -74,6 +63,7 @@ header h2 {
     padding: 0.5rem;
     border: 2px solid #000004;
     font-weight: 595;
+    font-size: 1rem;
   
 
     
@@ -86,37 +76,54 @@ header h2 {
    
 }
 
-.hero div { 
-    font-size: 1rem;
-}
+
+
 
 /* bio */
+
 .bio {
-    
-   
     color: #F2EFE7; 
- 
- }
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    font-size: 1.5rem;
+}
 
 
  /* bio header */
+
 .bio-h {
     font-family: "Bebas Neue";
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color:#F2EFE7;
     text-align: center;
-    
-
 } 
+
+.bio h2 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
 
 
 /* hobbies */
+
 .hobbies {
-    color:#F2EFE7;
-    
+    display: flex; 
+    flex-direction: column;   
+    color:#F2EFE7;    
 }
 
+.hobbies h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
 /* gallery */
+
 .gallery {
 
     font-size: large;
@@ -135,6 +142,7 @@ header h2 {
 
 .gallery img {
     width: 85%;
+    height: auto;
     border: 2px solid #F2EFE7;
 }
 
@@ -149,6 +157,7 @@ header h2 {
     border: 5px solid black;
     border-left: none;
     border-right: none;
+    text-align: justify;
     margin-top: 15%;
     color:#F2EFE7
     
@@ -179,9 +188,9 @@ header h2 {
 
 
 
-/* Drop case */
+/* Drop cap */
 
-.lit div p:first-letter {
+.lit div p:first-child:first-letter {
     color: rgb(0, 0, 0);
     float:left; 
     font-family:"monoton"; 
@@ -207,6 +216,96 @@ header h2 {
     border: 2px solid #000004;
    
 }
+
+
+@media screen and (min-width: 960px) {
+
+    h2 { 
+        font-size: 2em;
+    }
+
+    .hero {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        
+        
+
+    }
+
+    .hero img {
+        width: fit-content;
+        
+    }
+
+    .gallery h2 {
+        font-size: 2.3em;
+    }
+    
+
+    figure {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figure img {
+        height: 100%;
+    }
+
+    figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .lit div {
+        max-width:100%;
+        columns: 15rem;
+    }
+    
+    .lit h2 {
+        padding-top: 3.5rem;
+        padding-bottom: 3rem;
+    }
+    
+
+
+    @media screen and (min-width: 100em) {
+        hr {
+            display: none;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-top: 2px solid #F2EFE7;
+            border-bottom:  2px solid #F2EFE7;
+
+        }
+
+        .gallery h2 {
+            grid-column: 1/-1;
+            
+        }
+
+        figure {
+            display:block;
+        }
+    }
+
+
+
+   
+
+
+}
+    
+    
+
+
+
 
 
 
