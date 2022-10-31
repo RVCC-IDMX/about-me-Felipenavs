@@ -157,7 +157,7 @@ header .box-2 {
     border: 5px solid black;
     border-left: none;
     border-right: none;
-    text-align: justify;
+    text-align: left;
     margin-top: 15%;
     color:#F2EFE7
     
@@ -205,8 +205,39 @@ header .box-2 {
 }
 
 
+/* Video section */
+
+.video h2 {
+    text-align: center;
+    color: #F2EFE7;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+    
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width:100%;
+    
+    
+}
+
+
+
+
 
 /* footer */
+
 .footer {
     margin-top: 10%;
     font-size: 1rem;
@@ -218,11 +249,16 @@ header .box-2 {
 }
 
 
+/* 960px Screen section */
+
+
 @media screen and (min-width: 960px) {
 
     h2 { 
         font-size: 2em;
     }
+
+    /* hero section */
 
     .hero {
         font-size: 1.5rem;
@@ -237,6 +273,8 @@ header .box-2 {
         width: fit-content;
         
     }
+
+    /* Gallery section */
 
     .gallery h2 {
         font-size: 2.3em;
@@ -261,6 +299,8 @@ header .box-2 {
         text-align: left;
     }
 
+    /* Article section */
+
     .lit div {
         max-width:100%;
         columns: 15rem;
@@ -270,37 +310,69 @@ header .box-2 {
         padding-top: 3.5rem;
         padding-bottom: 3rem;
     }
+}
     
 
+/*1600px Screen section */
 
-    @media screen and (min-width: 100em) {
-        hr {
-            display: none;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            border-top: 2px solid #F2EFE7;
-            border-bottom:  2px solid #F2EFE7;
+@media screen and (min-width: 1600px) {
 
-        }
+     /* Gallery section */
 
-        .gallery h2 {
-            grid-column: 1/-1;
-            
-        }
-
-        figure {
-            display:block;
-        }
+    hr {
+        display: none;
     }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-top: 2px solid #F2EFE7;
+        border-bottom:  2px solid #F2EFE7;
+
+    }
+
+    .gallery h2 {
+        grid-column: 1/-1;
+            
+    }
+
+    figure {
+        display:block;
+    }
+
+    /* video section */
+
+    video {
+        position: relative;
+        margin: auto;
+    }
+
+    video, h2 {
+        margin: 1%;
+    }
+
+    .videowrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 211px;
+        padding-top: 211px;
+        width: 750px;
+        height: 0px;
+            
+            
+    }
+
+    /* Article section */
+    .lit {
+        margin-top: 5%;
+    }
+}
 
 
 
    
 
 
-}
+
     
     
 
