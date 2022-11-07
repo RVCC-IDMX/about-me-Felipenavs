@@ -236,7 +236,55 @@ header .box-2 {
 
 #formElements {
     display: grid;
+    row-gap: .9rem;
+    color:white;
+    font-size: 1rem;
         
+}
+
+.contacth2 {
+    color:white;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+
+}
+
+fieldset {
+    border: 7px double white;
+}
+
+legend {
+    font-size: 1em;
+}
+
+#contact input, textarea, #contact textarea, #contact select, #contact butto {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: aliceblue;
+    color:#00565C;
+    font-weight: 900;
+    font-weight: 400;
+    font-size: 1.2em;
+    max-width: 400px;
+    width: 40%;
+    height: 40px;
+    justify-self: center;
 }
 
 
@@ -372,5 +420,12 @@ header .box-2 {
     /* Article section */
     .lit {
         margin-top: 5%;
+    }
+
+    /* Contact Form section */
+    #formElements {
+        row-gap: 1rem;
+        font-size: 1.5rem;
+            
     }
 }
