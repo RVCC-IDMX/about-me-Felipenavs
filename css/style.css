@@ -232,6 +232,14 @@ header .box-2 {
     
 }
 
+/*contact form */
+
+#formElements {
+    display: grid;
+        
+}
+
+
 
 
 
@@ -366,24 +374,3 @@ header .box-2 {
         margin-top: 5%;
     }
 }
-
-
-
-   
-
-
-
-    
-    
-
-
-
-
-
-
-
-
- 
-
-
-   
