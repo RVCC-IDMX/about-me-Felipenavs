@@ -81,7 +81,7 @@ header .box-2 {
 
 /* bio */
 
-.bio {
+#bio {
     color: #F2EFE7; 
     display: flex; 
     flex-direction: column; 
@@ -124,7 +124,7 @@ header .box-2 {
 
 /* gallery */
 
-.gallery {
+#gallery {
 
     font-size: large;
     background-color: #000004;
@@ -132,7 +132,7 @@ header .box-2 {
     color:#F2EFE7;
 }
 
-.gallery h2 {
+#gallery h2 {
     text-align:center;
     justify-content:center;
     margin-bottom: none;
@@ -140,20 +140,20 @@ header .box-2 {
     
 }
 
-.gallery img {
+#gallery img {
     width: 85%;
     height: auto;
     border: 2px solid #F2EFE7;
 }
 
-.gallery figure {
+#gallery figure {
     margin: 0 0 ;
     font-weight: 600;
     
 }
 
 /* literature */
-.lit {
+#lit {
     border: 5px solid black;
     border-left: none;
     border-right: none;
@@ -163,7 +163,7 @@ header .box-2 {
     
 }
 
-.lit h2 {
+#lit h2 {
     text-align: center;
     padding: 10% 0;
     margin: 0 0;
@@ -171,7 +171,7 @@ header .box-2 {
 }
 
 
-.lit div {
+#lit div {
   
     font-size: large;
     padding: 2rem;
@@ -190,7 +190,7 @@ header .box-2 {
 
 /* Drop cap */
 
-.lit div p:first-child:first-letter {
+#lit div p:first-child:first-letter {
     color: rgb(0, 0, 0);
     float:left; 
     font-family:"monoton"; 
@@ -332,7 +332,7 @@ legend {
 
     /* Gallery section */
 
-    .gallery h2 {
+    #gallery h2 {
         font-size: 2.3em;
     }
     
@@ -357,12 +357,12 @@ legend {
 
     /* Article section */
 
-    .lit div {
+    #lit div {
         max-width:100%;
         columns: 15rem;
     }
     
-    .lit h2 {
+    #lit h2 {
         padding-top: 3.5rem;
         padding-bottom: 3rem;
     }
@@ -378,7 +378,7 @@ legend {
     hr {
         display: none;
     }
-    .gallery {
+    #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         border-top: 2px solid #F2EFE7;
@@ -386,7 +386,7 @@ legend {
 
     }
 
-    .gallery h2 {
+    #gallery h2 {
         grid-column: 1/-1;
             
     }
@@ -418,7 +418,7 @@ legend {
     }
 
     /* Article section */
-    .lit {
+    #lit {
         margin-top: 5%;
     }
 
