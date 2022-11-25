@@ -49,8 +49,8 @@ main {
 }
 
 .logo img {
-    height: 10vw;
-    width: 10vw;
+    height: 15vw;
+    width: 15vw;
 }
 
 .logo h2 {
@@ -133,9 +133,10 @@ such that no text wraps
 
    
     .logo img {
-        height: 2vw;
-        width: 4vw;
+        height: 6vw;
+        width: 6vw;
         padding-left: 2em;
+        padding-right: 2em;
     }
 
     .logo h2 {
