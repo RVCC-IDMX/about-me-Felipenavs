@@ -26,14 +26,17 @@ main {
 /* navbar */
 
 .navbar {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: rgba(242, 239, 231, .7);
+    color: #5199A3;
     display: flex;
     flex-direction: column;
     font-size: 0.5em;
     margin-bottom: 1rem;
     padding: 0.7rem;
     padding-top: 1.2rem;
+    /* z-index: 999;
+    position: fixed;
+    width: 100%;*/
 }
 
 .navbar ul {
@@ -49,8 +52,8 @@ main {
 }
 
 .logo img {
-    height: 15vw;
-    width: 15vw;
+    height: 12vw;
+    width: 12vw;
 }
 
 .logo h2 {
@@ -78,8 +81,7 @@ main {
 */
 
 .navbar-links a {
-    color:whitesmoke;
-    background-color: #333;
+    color:#5199A3;
     font-size: 1.7em;
     padding: 0.7rem 1.25rem;
     letter-spacing: 2px;
@@ -90,8 +92,8 @@ main {
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-    color:#333;
-    background-color: whitesmoke;
+    color: #F2EFE7;
+    background-color: #5199A3;
     border-radius: 10px;
     outline: none;
 
@@ -103,12 +105,6 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 @media screen and ( min-width: 60rem ) {
-
-    /* .navbar-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } */
 
     .navbar {
         flex-direction: row;
