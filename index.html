@@ -15,27 +15,34 @@
 
 <body>
 
+
+
+
     <header>
 
-        <nav class="navbar">
-            <div class="logo">
-                <img src="img/logo-oficial.svg" alt="logo with my initials">
-                <h2>Web Dev I</h2>
+        <a href="#principio" id="extra-space"><img src="img/logo-oficial.svg" alt="logo with my initials"></a>
 
-            </div>
-            <div class="navbar-links">
-                <ul>
-                  <li><a href="#bio" id="extra-space"  class="nav-links">Bio</a></li>
-                  <li><a href="#gallery" class="nav-links">Gallery</a></li>
-                  <li><a href="#lit" class="nav-links">Blog</a></li>
-                  <li><a href="#contact" id="extra-space2" class="nav-links">Contact Me</a></li>
-                </ul>
-            </div>
+        <h2>Web Dev I</h2>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        
+
+        <nav class="navbar">        
+            <ul>
+                <li><a href="#bio" id="extra-space"  class="nav-links">Bio</a></li>
+                <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                <li><a href="#lit" class="nav-links">Blog</a></li>
+                <li><a href="#contact" id="extra-space2" class="nav-links">Contact Me</a></li>
+              </ul>
         </nav>
         
     </header>
 
-    <main>
+    <main id="principio">
 
         <section class="hero">
             <img src="img/avataaars.svg" alt="avatar image of me">
@@ -44,6 +51,7 @@
                 <p>Felipe Mancia Navas</p>
                 <p>Tegucigalpa, Honduras</p>
             </div>
+
         </section>
 
         <section id="bio">
