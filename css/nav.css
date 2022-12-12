@@ -27,8 +27,8 @@ main {
 
 /* header styling */
 header {
-    background-color:rgba(68, 67, 64, 0.8);
-    color: #5199A3;
+    background-color:rgba(68, 67, 64, 1);
+    color:  #F2EFE7;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -78,7 +78,7 @@ nav li {
 }
 
 nav a {
-    color:#5199A3;
+    color: #F2EFE7;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -91,8 +91,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #F2EFE7;
-    background-color: #5199A3;
+    color: rgba(68, 67, 64, 1);
+    background-color: #F2EFE7;
     border-radius: 10px;
     outline: none;
 
@@ -176,13 +176,17 @@ nav a:focus {
     
     /* reducing the padding top of the main section */
     main {
-        padding-top: 16vw;
+        padding-top: 12vw;
     }
 
     /* reducing size of logo */
     header img {
-        height: 13vw;
-        width: 13vw;
+        height: 9vw;
+        width: 9vw;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
     }
 
     /* resizing hamburguer icon */
@@ -219,7 +223,15 @@ nav a:focus {
     }
 }
 
-@media screen and ( min-width: 1450px ) {
+@media screen and ( min-width: 1070px) {
+    
+    header img {
+        height: 9vw;
+        width: 9vw;
+    }
+}
+
+@media screen and ( min-width: 1450px) {
 
     .nav-toggle-label {
         display: none;
@@ -235,8 +247,8 @@ nav a:focus {
         margin: 0;
         padding: 0.5rem;
         margin-left: 1em;
-        height: 4vw;
-        width: 4vw;
+        height: 5vw;
+        width: 5vw;
         grid-column: 1 / 2;
         display: flex;
         justify-content: left;
@@ -261,6 +273,7 @@ nav a:focus {
     }
 
     nav a {
+        font-size: 1.5rem;
         opacity: 1;
     }
 

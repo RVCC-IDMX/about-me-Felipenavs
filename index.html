@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96-2.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Italianno&family=Monoton&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                 <li><a href="#bio" id="extra-space"  class="nav-links">Bio</a></li>
                 <li><a href="#gallery" class="nav-links">Gallery</a></li>
                 <li><a href="#lit" class="nav-links">Blog</a></li>
-                <li><a href="#contact" id="extra-space2" class="nav-links">Contact Me</a></li>
+                <li><a href="#contact" id="extra-space2" class="nav-links">Contact</a></li>
               </ul>
         </nav>
         
@@ -49,7 +49,7 @@
 
             <div>
                 <p>Felipe Mancia Navas</p>
-                <p>Tegucigalpa, Honduras</p>
+                <p>South Plainfield, New Jersey</p>
             </div>
 
         </section>
@@ -111,7 +111,7 @@
                 <img class="zoom"  src="img/badbunny-640w.jpg" alt="Bad Bunny concert">
 
 
-                <div class="content fade slide-down"> Bad Bunny Concert</div>
+                <div class="content fade slide-down"> Bad Bunny Concert</div> 
             </div>    
 
             <div class="img-wrapper">
@@ -125,6 +125,8 @@
         </section>
 
         <section class="video">
+
+            
             <h2>A Short Video of Nymeria</h2>
 
             <div class="videowrapper">
@@ -136,43 +138,44 @@
 
         <article id="lit">
 
-            <h2>Pride and Prejudice</h2>
+            <h2>Image Hover Effects</h2>
 
             <div>
-                <p id="p1">This is an evening of wonders, indeed! And so, Darcy did every thing; made up the match, gave the
-                    money, paid the fellow’s debts, and got him his commission! So much the better. It will save me a
-                    world of trouble and economy. Had it been your uncle’s doing, I must and would have paid him; but
-                    these violent young lovers carry every thing their own way. I shall offer to pay him to-morrow; he
-                    will rant and storm about his love for you, and there will be an end of the matter.</p>
+                <p id="p1">Having an interactive website is crucial, most modern websites nowadays have some sort of interactivity because it helps to keep our users more engaged with our content and overall it provides a more enjoyable experice. Image hover effects is a fantastic tool to help us achieve that interactivity. There are many different elements and attributes that we can be use to style and embelish a website using only CSS. Here I'll talk about some of the image hover effects I used on my website.</p>
 
-                <p>He then recollected her embarrassment a few days before, on his reading Mr. Collins’s letter; and
-                    after laughing at her some time, allowed her at last to go--saying, as she quitted the room, “If any
-                    young men come for Mary or Kitty, send them in, for I am quite at leisure.”</p>
+                <p>First, I started by creating a div for each one of my images inside of my gallery section. Inside each of those divs, I placed an image and another div right below it to add the text content I wanted to describe my images. This allowed me to use position relative and absolute to place my text content on top of my image:</p>
 
-                <p>Elizabeth’s mind was now relieved from a very heavy weight; and, after half an hour’s quiet
-                    reflection in her own room, she was able to join the others with tolerable composure. Every thing
-                    was too recent for gaiety, but the evening passed tranquilly away; there was no longer anything
-                    material to be dreaded, and the comfort of ease and familiarity would come in time.</p>
+                <img src="img/html.png">
 
-                <p>When her mother went up to her dressing-room at night, she followed her, and made the important
-                    communication. Its effect was most extraordinary; for on first hearing it, Mrs. Bennet sat quite
-                    still, and unable to utter a syllable. Nor was it under many, many minutes that she could comprehend
-                    what she heard; though not in general backward to credit what was for the advantage of her family,
-                    or that came in the shape of a lover to any of them. She began at length to recover, to fidget about
-                    in her chair, get up, sit down again, wonder, and bless herself.</p>
+                <p>Secondly, I styled my content div. I added some backgorund color and some transparency so I could still see the image under it. Also, centered the text and adjusted the font size to my liking:</p>
 
-                <p>Good gracious! Lord bless me! only think! dear me! Mr. Darcy! Who would have thought it! And is it
-                    really true? Oh! my sweetest Lizzy! how rich and how great you will be! What pin-money, what jewels,
-                    what carriages you will have! Jane’s is nothing to it--nothing at all. I am so pleased--so happy.
-                    Such a charming man!--so handsome! so tall!--Oh, my dear Lizzy! pray apologise for my having
-                    disliked him so much before. I hope he will overlook it. Dear, dear Lizzy. A house in town! Every
-                    thing that is charming! Three daughters married! Ten thousand a year! Oh, Lord! What will become of
-                    me. I shall go distracted.</p>
+                <img src="img/text-content-div.png">
 
-                <p>This was enough to prove that her approbation need not be doubted: and Elizabeth, rejoicing that such
-                    an effusion was heard only by herself, soon went away. But before she had been three minutes in her
-                    own room, her mother followed her.</p>
+                <p>Now it was time to add some inteactivity to the images. I started by selecting my image and the content div at the same time in css and added a transition property with a delay of 2.5s to them making it so that all the properties later added can transition at the same time: </p>
 
+                <img src="img/transition.png">
+
+                <p>The first style of animation that I added to my images was opacity. In order to do that I selected my div content and set the opacity to 0 as default. Then I added the pseudo-class :hover to my div content. By doing so, when the mouse hovers over the image the content div shows up and when the mouse isn't hovering it the text content fades out: </p>
+
+                <img src="img/fade.png">
+
+                <p>After that, I kind of wanted the hovered image to stand out a bit more, so I added more animation to them. I used the 'transform'property with the 'scale' property to make to make the hovered image stand out even more when the mouse is over it. So when the mouse is over the image, the image zoom in a bit:</p>
+
+                <img src="img/zoom.png">
+
+                <p>Lastly, I didn't want the text content to just abruptly appear out of nowhere, I kind of wanted it to slide in from on of the side of the image. To achieve this I used the 'transform' attribute with the 'trasnlate' property. I did 3 differents slide in affects, one for each of my images. </p>
+
+                <p>The first one slides in from left to right. So I used the 'trasnlateX' property, and set it to be -100% by default, and when the mouse hover over it to translate to 0%. This way, the text content will appear from the left and take the whole space of the image: </p>
+
+                <img src="img/slide-left.png">
+
+                <p>With the second image I used the same transalte property, but from the Y axis -translateY-. My intention was for it the slide from the top to bottom. So I set the first value to 100% and then translateY to 0%:</p>
+
+                <img src="img/slide-down.png">
+
+                <p>For my last image i used the translateX property again but I made it slide in from the right side. so I set the first value to 100% and the second to 0%:</p>
+
+                <img src="img/slide-right.png">
 
             </div>
 
@@ -180,7 +183,7 @@
 
         <section id="contact">
 
-            <h2 class="contacth2">Contact Us</h2>
+            <h2 class="contacth2">Contact Form</h2>
 
             <form id="contactForm" name="contactForm" method="post" data-netlify="true">
 
@@ -251,17 +254,21 @@
         </section>
 
 
-
-
-
-
     </main>
 
     <footer class="footer">
-        ©2022 - Felipe Mancia Navas
-        <a href="https://github.com/Felipenavs"></a>
+        <div>
+            ©2022 - Felipe Mancia Navas
+        </div>
+
+        <div>
+            <a class="github-icon" href="https://github.com/Felipenavs"><ion-icon name="logo-github"></ion-icon></a>
+            
+        </div>
 
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.
 </body>
 
 </html>
