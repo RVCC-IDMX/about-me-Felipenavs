@@ -58,8 +58,9 @@ header {
 
 .hero img {
     align-self: center;
-    width: 40%;
-   
+    width: 25%;
+    height: auto;
+    padding-top: 7%;
 }
 
 
@@ -126,17 +127,85 @@ header {
     
 }
 
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 250ms ease-in-out;
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+.img-wrapper:hover > img.blur {
+    filter: blur(5px);
+}
+
+.img-wrapper:hover > img.gray {
+    filter: grayscale(1.2)
+}
+
+.img-wrapper:hover > img.zoom {
+    transform: scale(1.15);
+}
+
+.img-wrapper > .content.slide-left {
+    transform: translateX(-100%);
+}
+
+.img-wrapper:hover > .content.slide-left {
+    transform: translateX(0%);
+}
+
+.img-wrapper > .content.slide-right {
+    transform: translateX(100%);
+}
+
+.img-wrapper:hover > .content.slide-right {
+    transform: translateX(0%);
+}
+
+.img-wrapper > .content.slide-down {
+    transform: translateY(-100%);
+}
+
+.img-wrapper:hover > .content.slide-down {
+    transform: translateY(0%);
+}
+
+
 #gallery img {
-    width: 85%;
+    width: 100%;
     height: auto;
     border: 2px solid #F2EFE7;
 }
 
-#gallery figure {
-    margin: 0 0 ;
-    font-weight: 600;
-    
-}
 
 /* literature */
 #lit {
@@ -311,10 +380,6 @@ legend {
 
     }
 
-    .hero img {
-        width: fit-content;
-        
-    }
 
     /* Gallery section */
 
@@ -329,17 +394,11 @@ legend {
     }
 
     figure img {
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
 
-    figcaption {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-        text-align: left;
-    }
+    
 
     /* Article section */
 
