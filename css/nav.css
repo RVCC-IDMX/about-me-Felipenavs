@@ -223,6 +223,7 @@ nav a:focus {
     }
 }
 
+/* 1070px screen size section */
 @media screen and ( min-width: 1070px) {
     
     header img {
@@ -231,8 +232,10 @@ nav a:focus {
     }
 }
 
+/* 1450px+ screen size section */
 @media screen and ( min-width: 1450px) {
 
+    /* removing past styling */
     .nav-toggle-label {
         display: none;
     }
